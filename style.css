@@ -1,0 +1,124 @@
+:root {
+  --light-bg: #ffffff;
+  --light-text: #333333;
+  --dark-bg: #1a1a1a;
+  --dark-text: #ffffff;
+}
+
+body {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.light-mode {
+  background-color: var(--light-bg);
+  color: var(--light-text);
+}
+
+body.dark-mode {
+  background-color: var(--dark-bg);
+  color: var(--dark-text);
+}
+
+.card {
+  transition: background-color 0.3s;
+}
+
+.dark-mode .card {
+  background-color: #2d2d2d;
+  color: var(--dark-text);
+}
+
+.crypto-card {
+  transition: transform 0.2s;
+}
+
+.crypto-card:hover {
+  transform: translateY(-5px);
+}
+
+.price-up {
+  color: #28a745;
+}
+
+.price-down {
+  color: #dc3545;
+}
+
+.news-item {
+  transition: transform 0.2s;
+}
+
+.news-item:hover {
+  transform: translateY(-3px);
+}
+
+.navbar {
+  transition: background-color 0.3s;
+}
+
+.dark-mode .navbar {
+  background-color: #2d2d2d !important;
+}
+
+/* Theme Toggle */
+#theme-toggle {
+    transition: all 0.3s;
+    width: 32px;
+    height: 32px;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+/* Dark Mode Icons */
+.dark-mode #light-icon { display: none !important; }
+.dark-mode #dark-icon { display: inline-block !important; }
+body:not(.dark-mode) #light-icon { display: inline-block !important; }
+body:not(.dark-mode) #dark-icon { display: none !important; }
+
+/* Dark Mode Styles */
+.dark-mode .text-muted { color: #a0a0a0 !important; }
+
+/* News Items */
+.news-item {
+    transition: transform 0.2s;
+}
+
+.news-item:hover {
+    transform: translateY(-3px);
+}
+
+/* Navbar */
+.navbar {
+    transition: background-color 0.3s;
+}
+
+/* Add these to your existing styles */
+.meme-card {
+    background: linear-gradient(145deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 100%);
+    border: 2px solid rgba(255, 215, 0, 0.1);
+}
+
+.dark-mode .meme-card {
+    background: linear-gradient(145deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0) 100%);
+    border: 2px solid rgba(255, 215, 0, 0.2);
+}
+
+.meme-card:hover {
+    border-color: rgba(255, 215, 0, 0.3);
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(255, 215, 0, 0.1);
+}
+
+.dark-mode .meme-card:hover {
+    border-color: rgba(255, 215, 0, 0.4);
+    box-shadow: 0 5px 15px rgba(255, 215, 0, 0.15);
+}
+
+#memecoins .badge {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CryptoNews Hub</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Your trusted source for cryptocurrency news and market data. Get the latest updates on Bitcoin, Ethereum, and other cryptocurrencies.">
+    <meta name="keywords" content="cryptocurrency, bitcoin, ethereum, crypto news, blockchain, digital currency, crypto market">
+    <meta name="author" content="CryptoNews Hub">
+    
+    <!-- Open Graph Tags for Social Media -->
+    <meta property="og:title" content="CryptoNews Hub - Cryptocurrency News and Market Data">
+    <meta property="og:description" content="Get the latest cryptocurrency news and real-time market data for Bitcoin, Ethereum, and other digital currencies.">
+    <meta property="og:image" content="https://cryptonewshub.com/images/og-image.jpg">
+    <meta property="og:url" content="https://cryptonewshub.com">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="CryptoNews Hub - Cryptocurrency News and Market Data">
+    <meta name="twitter:description" content="Get the latest cryptocurrency news and real-time market data.">
+    <meta name="twitter:image" content="https://cryptonewshub.com/images/twitter-image.jpg">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body class="light-mode">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">CryptoNews Hub</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#markets">Markets</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#news">News</a>
+            </li>
+
+          </ul>
+          <button id="theme-toggle" class="btn btn-outline-light">
+            <i class="fas fa-sun" id="light-icon"></i>
+            <i class="fas fa-moon" id="dark-icon"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container mt-5 pt-4">
+      <!-- Market Overview Section -->
+      <section id="markets" class="my-4">
+        <h2>Market Overview</h2>
+        <div class="row" id="crypto-data">
+          <div class="col-12">
+            <div class="d-flex justify-content-center">
+              <div class="spinner-border" role="status">
+                <span class="visually-hidden">Loading...</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- News Section -->
+      <section id="news" class="my-4">
+        <h2>Latest News</h2>
+        <div class="row" id="news-container">
+          <!-- News items will be inserted here -->
+        </div>
+      </section>
+
+
+    </main>
+
+    <footer class="bg-dark text-light py-4 mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h5>CryptoNews Hub</h5>
+            <p>Your trusted source for cryptocurrency news and market data.</p>
+          </div>
+          <div class="col-md-6 text-md-end">
+            <p>© 2025 CryptoNews Hub. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="/main.js"></script>
+    <!-- Add this before the closing body tag -->
+
+  </body>
+</html>
